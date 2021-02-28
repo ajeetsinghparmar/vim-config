@@ -1,0 +1,49 @@
+snippet rnfes "Description" b
+import React from 'react'
+import { StyleSheet, Text, View } from 'react-native'
+
+const ${1:ComponentName} = () => {
+    return (
+        <View>
+            <Text>$2</Text>
+        </View>
+    )
+}
+
+export default $1
+
+const styles = StyleSheet.create({})
+endsnippet
+
+snippet rafcp "Description" b
+import React from 'react'
+import PropTypes from 'prop-types'
+
+const $1 = (props) => {
+  return <div>$0</div>
+}
+
+$1.propTypes = {}
+
+export default $1
+endsnippet
+
+snippet rafce "Description" b
+import React from 'react'
+
+const $1 = () => {
+  return (
+    <div>$0</div>
+    )
+}
+
+export default $1
+endsnippet
+
+snippet imp "Description" b
+import $2 from '$1'
+endsnippet
+
+snippet imd "Description" b
+import { $0 } from '$1'
+endsnippet

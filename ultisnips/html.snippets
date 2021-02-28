@@ -1,0 +1,28 @@
+snippet ! "Description" b
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${1:Document}</title>
+</head>
+<body>
+    $2
+</body>
+</html>
+endsnippet
+
+
+snippet ext "Description" b
+{% extends '${1:base.html}' %}
+endsnippet
+
+snippet bl
+{% block ${1:content} %}
+	$2
+{% endblock $1 %}
+endsnippet
+
+snippet < "Description" b
+<${1:div} ${2:class="container"}>$3</$1>
+endsnippet
