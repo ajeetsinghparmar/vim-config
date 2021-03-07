@@ -9,7 +9,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         \ 'do': 'yarn install',
         \ 'for': ['javascript', 'css', 'html', 'python']
       \ }
-    " For React Styled Components
+	" Syntax Highlighting
+	Plug 'sheerun/vim-polyglot'
+	" For React Styled Components
     Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
     " Airline for status bar
     Plug 'vim-airline/vim-airline'   
@@ -30,4 +32,4 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Surround using cs ds and yss
     Plug 'tpope/vim-surround'
 
-    call plug#end()
+call plug#end()
