@@ -159,3 +159,14 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+
+let g:coc_snippet_next = '<tab>'
+
+" R lsp
+" send line
+nmap , <Plug>RDSendLine
+"Send multiple lines
+vmap , <Plug>RDSendSelection
+" Send multiple lines + echo lines
+vmap ,e <Plug>RESendSelection

@@ -1,3 +1,4 @@
+let mapleader=' '
 " use alt+hjkl to move between split/vsplit panels
 tnoremap <A-h> <C-\><C-n><C-w>h
 tnoremap <A-j> <C-\><C-n><C-w>j
@@ -8,8 +9,10 @@ nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
 
-nmap <leader>y "+y
-vmap <leader>y "+y
-nmap <leader>p "+p
-"nmap <leader>h :sp|:term<cr>
-"nmap <leader>v :vsp|:term<cr>
+nmap <C-y> "+Y
+vmap <C-y> "+y
+vmap <C-p> "+p
+nmap <C-p> "+p
+"nmap <C-h> :sp|:term<CR>
+"nmap <C-j> :vsp|:term<CR>
+"
